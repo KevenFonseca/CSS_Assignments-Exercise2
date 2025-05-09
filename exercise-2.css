@@ -1,0 +1,141 @@
+/* 
+
+-------------- TYPOGRAPHY --------------
+
+FONT FAMILY
+Lato
+
+FONT SIZE
+20px / 24px / 32px
+
+FONT WEIGHT
+400 / 500 / 800
+
+LINE HEIGHT
+1.2 / 1.5
+
+------- COLORS -------
+(white) #ffffff
+(Black) #000000
+(Emerald Green) #009966
+(Medium Grey) #999999
+(Amber) #ffbf00
+(Golden Brown) #cc9900
+(Dark Grey) #666666
+
+------- REM TO PIXEL-------
+
+1rem = 16px 
+2rem = 32px
+0.625rem = 10px
+1.15rem =20px 
+1.5rem = 24px 
+3.75rem = 60px 
+1.875 = 30px
+
+*/
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-emerald: #009966;
+    --color-grey: #999999;
+    --color-amber: #ffbf00;
+    --color-golden-brown: #cc9900;
+    --color-dark-grey: #666666;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-black);
+}
+
+/* -------------- HEADER --------------*/
+
+header {
+    padding: 3.75rem 0; 
+    background-color: var(--color-white);
+    border-bottom: 8px solid var(--color-grey);
+}
+
+.hero-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.site-title {
+    margin-left: 1.25rem;
+    display: inline-block;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2rem; 
+    line-height: 1.2;
+    padding: 1.25rem 0.625rem; 
+}
+
+.hero-description {
+    max-width: 420px;
+    width: 100%;
+    margin-left: 1.25rem;
+}
+
+.hero-description p {
+    font-size: 1.25rem;
+    padding: 0.625rem;
+}
+
+span {
+    color: var(--color-emerald);
+    font-weight: 800;
+}
+
+/* -------------- MAIN --------------*/
+
+main {
+    background-color: var(--color-dark-grey);
+    padding: 3.75rem 0;
+}
+
+.operations-section {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 8px solid var(--color-grey);
+    background-color: var(--color-white);
+}
+
+.section-heading {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    padding: 0.625rem 1.875rem;
+    background-color: var(--color-amber);
+    border-bottom: 8px solid var(--color-golden-brown);
+    display: inline-block;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.operations-text {
+    padding: 6.25rem 1.25rem 0;
+}
+
+.operations-text p {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
